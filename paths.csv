@@ -1,0 +1,11 @@
+variant,paths
+variant0,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Insert Fine Notification,Insert Fine Notification->Add penalty,Add penalty->Send for Credit Collection"
+variant1,Create Fine->Payment
+variant2,Create Fine->Send Fine
+variant3,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Insert Fine Notification,Insert Fine Notification->Add penalty,Add penalty->Payment"
+variant4,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Insert Fine Notification,Insert Fine Notification->Add penalty,Add penalty->Payment,Payment->Payment"
+variant5,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Insert Fine Notification,Insert Fine Notification->Payment,Payment->Add penalty,Add penalty->Payment"
+variant6,"Create Fine->Send Fine,Send Fine->Payment"
+variant7,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Insert Fine Notification,Insert Fine Notification->Insert Date Appeal to Prefecture,Insert Date Appeal to Prefecture->Add penalty,Add penalty->Send Appeal to Prefecture,Send Appeal to Prefecture->Send Appeal to Prefecture"
+variant8,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Insert Fine Notification,Insert Fine Notification->Add penalty,Add penalty->Payment,Payment->Send for Credit Collection"
+variant9,"Create Fine->Send Fine,Send Fine->Insert Fine Notification,Insert Fine Notification->Add penalty,Add penalty->Send for Credit Collection"

@@ -8,9 +8,9 @@
     "text": "Johannes Bock"
   },
   "text": {
-    "more": "Click on nodes to see more information for each story.",
-    "intro": "",
-    "title": "Crypto news"
+    "more": "",
+    "intro": "Click on nodes to see more information for each story.",
+    "title": ""
   },
   "legend": {
     "edgeLabel": "Semantic similarity",
@@ -19,12 +19,12 @@
   },
   "features": {
     "search": false,
-    "groupSelectorAttribute": "topic",
+    "groupSelectorAttribute": false,
     "hoverBehavior": "default"
   },
   "informationPanel": {
     "groupByEdgeDirection": false,
-    "imageAttribute": "title"
+    "imageAttribute": false
   },
   "sigma": {
     "drawingProperties": {

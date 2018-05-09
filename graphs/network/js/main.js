@@ -400,7 +400,6 @@ d3.json("data.json",function(d) {
 			});
 		
 		var bbox = d3.select(".chart").node().getBBox();
-		console.log(bbox);
 		
 		d3.select("svg")
 		.attr("viewBox",(bbox.x-10)+" "+(bbox.y-10)+" "+(bbox.width+20)+" "+(bbox.height+20))

@@ -284,13 +284,15 @@ d3.json("data.json",function(d) {
 		var margin = 75,
 				  width = 290 - margin,
 				  height = 650 - margin;
+				  
+				  
 
 		var svg = d3.select("body")
 				.insert("div").attr("id","visible_legend")
 				.insert("div").attr("class","new_legend")
 				.insert("svg")
-				  .attr("width", width + margin)
-				  .attr("height", height + margin)
+				//.attr("width", width + margin)
+				//.attr("height", height + margin)
 				.append('g')
 					.attr('class','chart');
 
@@ -357,7 +359,7 @@ d3.json("data.json",function(d) {
 				"group":cluster_name[i]
 				})
 			});
-		debugger;
+		
 
 		// add a legend
 		
@@ -396,6 +398,15 @@ d3.json("data.json",function(d) {
 			.text(function(d){
 				return d["group"];
 			});
+		
+		var bbox = d3.select(".chart").node().getBBox();
+		console.log(bbox);
+		
+		d3.select("svg")
+		.attr("viewBox",(bbox.x-10)+" "+(bbox.y-10)+" "+(bbox.width+20)+" "+(bbox.height+20))
+		.attr("width", (bbox.width+20)  + "px")
+		.attr("height",(bbox.height+20) + "px");
+
 
 		// Changes ABOVE
 		

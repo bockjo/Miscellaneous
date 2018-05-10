@@ -181,7 +181,6 @@ d3.json("data.json",function(d) {
 		$GP.mini = $("#minify");
 		$GP.info = $("#attributepane");
 		$GP.info_donnees = $GP.info.find(".nodeattributes");
-		debugger;
 		
 		$GP.info_name = $GP.info.find(".name");
 		$GP.info_link = $GP.info.find(".link");

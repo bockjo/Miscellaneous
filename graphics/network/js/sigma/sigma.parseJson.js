@@ -12,7 +12,8 @@ sigma.publicPrototype.parseJson = function(jsonPath,callback) {
 			//window.NODE = data.nodes[i];//In the original, but not sure purpose
 
 			if(data.nodes[i].attributes["url"]){
-    			data.nodes[i].attributes["url"] = "Read full article here".link(data.nodes[i].attributes["url"]);
+				var l = "Read full article here".link(data.nodes[i].attributes["url"]);
+    			data.nodes[i].attributes["url"] = l.replace(">",' target="_blank">');
 			}
 
 			sigmaInstance.addNode(id,data.nodes[i]);

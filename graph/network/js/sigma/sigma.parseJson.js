@@ -4,11 +4,19 @@
 
 sigma.publicPrototype.parseJson = function(jsonPath,callback) {
 	var sigmaInstance = this;
+
 	jQuery.getJSON(jsonPath, function(data) {
+
 		for (i=0; i<data.nodes.length; i++){
 			var id=data.nodes[i].id;
 			//window.NODE = data.nodes[i];//In the original, but not sure purpose
+
+			if(data.nodes[i].attributes["url"]){
+    			data.nodes[i].attributes["url"] = "Read full article here".link(data.nodes[i].attributes["url"]);
+			}
+
 			sigmaInstance.addNode(id,data.nodes[i]);
+			
 		}
 
 		for(j=0; j<data.edges.length; j++){

@@ -1,4 +1,4 @@
-d3.json("data.json",function(d) {
+d3.json("data1.json",function(d) {
 	var sigInst, canvas, $GP
 
 	//Load configuration file
